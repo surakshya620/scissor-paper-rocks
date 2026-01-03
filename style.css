@@ -4,13 +4,13 @@
     text-align: center;
 }
 
-/* Fix heading spacing */
+
 h1 {
     background-color: #081b31;
     color: #fff;
     height: 6rem;
-    line-height: 3rem;   /* same as height */
-    margin-bottom: 2rem; /* space below heading */
+    line-height: 3rem;  
+    margin-bottom: 2rem; 
 }
 
 /* Keep choice box size */
@@ -23,7 +23,7 @@ h1 {
     border-radius: 50%;
 }
 
-/* FIX image size properly */
+
 .choice img {
     height: 120px;
     width: 120px;
@@ -68,4 +68,69 @@ h1 {
     display: inline;
     padding:1rem;
     border-radius: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        height: auto;
+        line-height: normal;
+        padding: 1rem 0;
+    }
+
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    .choice img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .choices {
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .score-board {
+        font-size: 1.5rem;
+        gap: 3rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 3rem;
+    }
+
+    #msg {
+        font-size: 1.3rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choices {
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .choice {
+        height: 80px;
+        width: 80px;
+    }
+
+    .choice img {
+        height: 60px;
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+    }
 }
